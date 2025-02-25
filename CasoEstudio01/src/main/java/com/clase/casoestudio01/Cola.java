@@ -76,4 +76,8 @@ public class Cola {
     public RegistroParticipantes frente(){
         return (this.frente != null) ? this.frente.getDato() : null;
     }
+    
+    public boolean isEmpty(){
+        return frente == null;
+    }
 }
