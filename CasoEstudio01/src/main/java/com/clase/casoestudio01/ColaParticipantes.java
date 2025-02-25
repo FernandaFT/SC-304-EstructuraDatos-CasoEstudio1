@@ -8,6 +8,24 @@ package com.clase.casoestudio01;
  *
  * @author fernandafajardo
  */
-public class ColaParticipantes {
+public class ColaParticipantes extends Cola {
+
+    public ColaParticipantes() {
+        super();
+    }
     
+    /***
+     * Cuenta la cantidad de participantes en la cola.
+     * @author Fernanda Fajardo
+     * @return El número total de participantes en la cola.
+     */
+    public int cuentaParticipantes(){
+        int contador = 0;
+        NodoCola actual = this.getFrente();
+        while(actual != null){
+            contador = contador +1;
+            actual = actual.getSig();
+        }
+        return contador;
+    }
 }

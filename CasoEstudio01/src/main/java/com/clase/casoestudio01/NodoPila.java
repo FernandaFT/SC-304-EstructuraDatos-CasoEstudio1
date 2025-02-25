@@ -10,4 +10,27 @@ package com.clase.casoestudio01;
  */
 public class NodoPila {
     
+    private RegistroParticipantes dato;
+    private NodoPila sig;
+
+    public NodoPila(RegistroParticipantes dato) {
+        this.dato = dato;
+        this.sig = null;
+    }
+
+    public RegistroParticipantes getDato() {
+        return dato;
+    }
+
+    public void setDato(RegistroParticipantes dato) {
+        this.dato = dato;
+    }
+
+    public NodoPila getSig() {
+        return sig;
+    }
+
+    public void setSig(NodoPila sig) {
+        this.sig = sig;
+    }
 }

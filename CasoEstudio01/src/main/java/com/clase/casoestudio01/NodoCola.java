@@ -10,4 +10,27 @@ package com.clase.casoestudio01;
  */
 public class NodoCola {
     
+    private RegistroParticipantes dato;
+    private NodoCola sig;
+
+    public NodoCola(RegistroParticipantes dato) {
+        this.dato = dato;
+        this.sig = null;
+    }
+
+    public RegistroParticipantes getDato() {
+        return dato;
+    }
+
+    public void setDato(RegistroParticipantes dato) {
+        this.dato = dato;
+    }
+
+    public NodoCola getSig() {
+        return sig;
+    }
+
+    public void setSig(NodoCola sig) {
+        this.sig = sig;
+    }  
 }
