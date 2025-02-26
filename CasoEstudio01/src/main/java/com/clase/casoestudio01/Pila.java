@@ -68,6 +68,9 @@ public class Pila {
         }
     }
     
+    /***
+     * Imprime la pila de participantes.
+     */
     public void print(){
         if(isEmpty()){
             System.out.println("La pila esta vacía");
