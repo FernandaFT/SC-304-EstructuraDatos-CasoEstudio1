@@ -59,9 +59,8 @@ public class RegistroParticipantes {
 
     @Override
     public String toString() {
-        return "Registro Participantes:" + 
-                "\nNombre Completo: " + nombreCompleto +
-                "\nEdad: " + edad + 
-                "\nPosición: " + posicion;
+        return "Nombre: " + nombreCompleto +
+                "\nEdad: " + edad + " años" +
+                "\nPosición: " + posicion + "\n";
     }  
 }
