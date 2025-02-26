@@ -80,4 +80,15 @@ public class Cola {
     public boolean isEmpty(){
         return frente == null;
     }
+    
+    /***
+     * Imprime la cola de participantes.
+     */
+    public void imprimirCola(){
+        NodoCola actual = this.getFrente();
+        while(actual != null){
+            System.out.println(actual.getDato().toString());
+            actual = actual.getSig();
+        }
+    }
 }
